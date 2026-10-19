@@ -81,7 +81,8 @@ class QtIntegrationTests(unittest.TestCase):
 
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(prefix='cm_qt_test_')
-        self.root = Path(self.temp.name)
+        # Match the canonical paths returned by EditorSession, including 8.3 aliases.
+        self.root = Path(self.temp.name).resolve()
         self.saves = self.root/'saves'
         self.saves.mkdir()
         self.source = self.saves/'Player_Character_0.sav'

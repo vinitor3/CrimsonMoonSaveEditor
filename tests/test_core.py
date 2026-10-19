@@ -173,7 +173,7 @@ class CurrencyTests(unittest.TestCase):
 
 class ExportTests(unittest.TestCase):
     def setUp(self):
-        self.tmp=tempfile.TemporaryDirectory();self.root=Path(self.tmp.name)
+        self.tmp=tempfile.TemporaryDirectory();self.root=Path(self.tmp.name).resolve()
         self.srcdir=self.root/'originais';self.srcdir.mkdir()
         self.src=self.srcdir/'Player_Character_0.sav';self.src.write_bytes(fixture())
         self.bak=self.srcdir/'Player_Character_0.backup.sav';self.bak.write_bytes(fixture())
@@ -219,7 +219,7 @@ class ExportTests(unittest.TestCase):
     def test_manifest_hashes(self):
         from crimson.service import digest
         report=self.session.export(self.out,currency='gold',amount=1001)
-        self.assertEqual(report,json.loads((self.out/'manifesto.json').read_text()))
+        self.assertEqual(report,json.loads((self.out/'manifesto.json').read_text(encoding='utf-8')))
         self.assertEqual(report['source']['sha256'],digest(self.src.read_bytes()))
         self.assertEqual(report['output']['sha256'],digest((self.out/'save_teste'/self.src.name).read_bytes()))
     def test_disk_failure_cleans_only_new_outputs(self):

@@ -34,7 +34,8 @@ class StorageTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):cls.c=catalogue()
     def setUp(self):
-        self.tmp=tempfile.TemporaryDirectory();self.root=Path(self.tmp.name)
+        # The application resolves Windows 8.3 aliases; mocks must use the same path.
+        self.tmp=tempfile.TemporaryDirectory();self.root=Path(self.tmp.name).resolve()
         self.folder=self.root/'saves';self.folder.mkdir();self.src=self.folder/'Player_Character_0.sav'
         self.raw=sample();self.src.write_bytes(self.raw)
         self.gamebak=self.folder/'Player_Character_0.backup.sav';self.gamebak.write_bytes(self.raw)
@@ -52,7 +53,7 @@ class StorageTests(unittest.TestCase):
             self.assertEqual((b/'originais'/name).read_bytes(),data)
             if name!=self.src.name:self.assertEqual((self.folder/name).read_bytes(),data)
         self.assertEqual((b/'proposto'/self.src.name).read_bytes(),self.src.read_bytes())
-        self.assertEqual(json.loads((b/'manifesto.json').read_text())['status'],'applied')
+        self.assertEqual(json.loads((b/'manifesto.json').read_text(encoding='utf-8'))['status'],'applied')
     def test_restore_recovers_exactly_and_backs_up_current(self):
         r=self.store.apply(self.session);edited=self.src.read_bytes()
         rr=self.store.restore(self.src,r['backup_directory'],expected_current_hash=digest(edited))

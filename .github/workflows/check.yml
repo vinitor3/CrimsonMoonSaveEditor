@@ -1,10 +1,42 @@
 name: Validate public source
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+    branches:
+      - main
+      - 'legacy/**'
+    paths:
+      - 'crimson_editor.py'
+      - 'crimson/**'
+      - 'tests/**'
+      - 'tools/**'
+      - 'data/**'
+      - 'assets/**'
+      - 'requirements*.txt'
+      - 'public-resources.json'
+      - '.gitattributes'
+      - '.github/workflows/check.yml'
+  pull_request:
+    paths:
+      - 'crimson_editor.py'
+      - 'crimson/**'
+      - 'tests/**'
+      - 'tools/**'
+      - 'data/**'
+      - 'assets/**'
+      - 'requirements*.txt'
+      - 'public-resources.json'
+      - '.gitattributes'
+      - '.github/workflows/check.yml'
+  workflow_dispatch:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 permissions:
   contents: read
 jobs:
   tests:
     runs-on: windows-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

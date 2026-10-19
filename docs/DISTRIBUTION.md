@@ -10,3 +10,7 @@
 Run `python tools/audit_public.py` before publishing. The checked resource manifest is an allowlist of this reviewed public edition. It is not evidence of permission for arbitrary replacement files. Keep private imports outside tracked folders. Never commit locally imported game content or attach a private build to a release.
 
 [Nexus file submission guidelines](https://help.nexusmods.com/article/28-file-submission-guidelines) require appropriate rights; credit alone is insufficient. This document records the publication boundary, not a guarantee concerning every jurisdiction or future contribution.
+
+## Original v0.3.1 legacy download
+
+The separately published original v0.3.1 portable ZIP contains extracted game artwork and official localized names/descriptions. These are third-party game content, not MIT-licensed editor assets. No permission to redistribute them has been obtained from the rights holders. Attribution does not supply permission. The resource exclusions above apply to the repository source and v0.3.2 public edition. See [version notes](VERSION_0.3.1.md) for scope and the original checksum. This notice does not establish legal clearance or Nexus approval.

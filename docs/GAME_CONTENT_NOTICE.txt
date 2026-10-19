@@ -1,0 +1,9 @@
+CRIMSON MOON GAME CONTENT NOTICE — ORIGINAL 0.3.1 PACKAGE
+
+All extracted game artwork, icons, names, official localization and descriptions in the original 0.3.1 package belong to the respective Crimson Moon creators and rights holders. All rights in that content remain with them. This project claims no ownership, affiliation or endorsement.
+
+Game content is excluded from the editor code's MIT license. No permission from the rights holders to redistribute these resources has been obtained. Attribution is not permission, does not license reuse and does not guarantee acceptance by Nexus Mods, GitHub or the game rights holders.
+
+The original ZIP is provided unchanged so its identity can be checked. GitHub hosting does not imply Nexus approval or prove executable safety. For Nexus quarantine, request manual review of the exact file.
+
+Created by vinitor3, with GPT (OpenAI) assistance. Research tools: FModel and UE4SS; neither is bundled or required to run the editor.

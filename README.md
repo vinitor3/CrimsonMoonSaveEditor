@@ -2,7 +2,15 @@
 
 Unofficial Windows save editor by **vinitor3**, developed with **GPT / AI assistance**.
 
-**Public code edition:** complete application source, original geometric icons, authored UI translations and technical interoperability metadata. **No extracted game artwork, official item descriptions, localization archives or personal saves are distributed.** Equipment and blessings therefore use technical aliases rather than official localized names.
+**Source code / v0.3.2 public edition:** original geometric icons, authored UI wording and technical interoperability metadata. No extracted game artwork or official item descriptions are included in the repository source or the v0.3.2 public ZIP.
+
+## Version 0.3.1 — original legacy package
+
+[Download v0.3.1](https://github.com/vinitor3/CrimsonMoonSaveEditor/releases/tag/v0.3.1) — portable Windows ZIP, no installer. This is the original 0.3.1 package, with in-game artwork and localized item/effect descriptions. The 0.3.2 public edition remains the current release.
+
+**Game-content rights:** all extracted game artwork and official localization remain the property of the respective Crimson Moon rights holders. These resources are not covered by the editor's MIT license. No permission from the rights holders to redistribute them has been obtained; this notice is attribution, not authorization or endorsement. See [0.3.1 version notes](docs/VERSION_0.3.1.md).
+
+Nexus automatic checks requiring manual review do not establish either malware or safety. A GitHub download is not Nexus approval; contact Nexus support to review the exact blocked file.
 
 ## Features
 

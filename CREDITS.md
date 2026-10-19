@@ -9,4 +9,4 @@ Created by **vinitor3**, with assistance from **GPT (OpenAI)**. AI was used for 
 
 FModel and UE4SS are research tools; their executables and source are not bundled or required to run the editor. Each tool retains its own license. No endorsement is implied.
 
-Crimson Moon and its game content belong to their respective rights holders. Extracted game artwork and localization are **not included** in this repository. Crediting a creator does not grant permission to redistribute their work.
+Crimson Moon and its game content belong to their respective rights holders. Extracted game artwork and localization are **not included** in the repository source or v0.3.2 public package. The original v0.3.1 download contains extracted game resources; see docs/VERSION_0.3.1.md. Crediting a creator does not grant permission to redistribute their work.

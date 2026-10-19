@@ -1,0 +1,3 @@
+# Build/developer dependencies. The portable release does not require Python.
+PySide6-Essentials==6.12.0
+PyInstaller==6.22.3

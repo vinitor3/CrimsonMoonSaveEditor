@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "files": {
+    "data/catalogo.json": "e8d6798238b8353f3f27c0c3fd9fc25bb02f55e0e26d4bcb9bbc83667e7e367f",
+    "data/difficulty.json": "9e3002fbb669cbed6b701bf8b147227601748d712373d0c044ab9bc10853311a",
+    "data/game_data.json": "d1df1fd0b2b4774ffd00f43c79d058f91e1ed66fb8fec7f0c89303b6f9c7c109",
+    "data/progression.json": "b3cd24c5ed0774a6e82505c24c1f8f4b46f416acc43ac1512f4df694cc6ede26",
+    "data/textos_pt.json": "7e57e6b4c3332b09becacd13ab0ea20c6c01208b289aad6c2d84bc9b03d532a1",
+    "data/ui_translations.json": "5ac87c548d950fd9d582fab4da73654056bde8b98d5aa3aa915164b349dd8cdd"
+  }
+}

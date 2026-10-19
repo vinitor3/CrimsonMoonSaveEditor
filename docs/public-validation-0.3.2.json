@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-10-19T16:30:00.229571+00:00",
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "tests_run": 240,
+  "failures": 0,
+  "errors": 0,
+  "skipped": [
+    [
+      "test_export_path_symlink_to_originals_refused (test_core.ExportTests.test_export_path_symlink_to_originals_refused)",
+      "symlink unavailable"
+    ],
+    [
+      "test_real_sources_only_edited_in_memory_and_original_hashes_preserved (test_extras.ExtraTransactionTests.test_real_sources_only_edited_in_memory_and_original_hashes_preserved)",
+      "Opt-in read-only installed-save validation."
+    ],
+    [
+      "test_installed_sources_unchanged_after_temporary_copy_validation (test_release.ExtendedTransactionIntegrationTests.test_installed_sources_unchanged_after_temporary_copy_validation)",
+      "Opt-in read-only installed-save validation; set CM_VALIDATE_REAL_SAVES=1."
+    ],
+    [
+      "test_restore_via_symlink_is_rejected (test_review_regressions.ReviewRegressions.test_restore_via_symlink_is_rejected)",
+      "Sem permissão para symlink"
+    ],
+    [
+      "test_symlink_parent_rejected (test_storage.StorageTests.test_symlink_parent_rejected)",
+      "No symlink privilege"
+    ],
+    [
+      "test_symlink_source_rejected (test_storage.StorageTests.test_symlink_source_rejected)",
+      "No symlink privilege"
+    ]
+  ],
+  "elapsed_seconds": 27.92,
+  "passed": true,
+  "note": "Testes com dados sinteticos. Nao executam Crimson Moon nem editam saves instalados."
+}
